@@ -309,6 +309,25 @@ HTML_TEMPLATE = '''<!DOCTYPE html>
       font-size: 12px;
       letter-spacing: 0.5px;
     }
+    @media (max-width: 600px) {
+    .card {
+      padding: 24px;
+    }
+
+    .input-row {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    
+    input[type="text"] {
+      width:100%
+    }
+    .btn-primary{
+      align-self: center;
+      width:70%;
+    }
+  }
   </style>
 </head>
 <body>
