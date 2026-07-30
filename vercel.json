@@ -1,15 +1,8 @@
 {
-  "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "src/recipe_generator/main.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "src/recipe_generator/main.py"
+      "source": "/(.*)",
+      "destination": "src/recipe_generator/main.py"
     }
   ]
 }
